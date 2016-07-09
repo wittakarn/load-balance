@@ -80,7 +80,7 @@ public class HttpRequestTask extends TimerTask {
             long starTime = System.currentTimeMillis();
             conn.connect();
 
-            if (conn.getResponseCode() < 500) {
+            if (conn.getResponseCode() == 200) {
 
                 long elasedTime = System.currentTimeMillis() - starTime;
                 System.out.println(elasedTime);

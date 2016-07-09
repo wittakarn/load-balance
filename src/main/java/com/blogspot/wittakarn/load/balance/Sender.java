@@ -36,6 +36,7 @@ public class Sender {
                 conn.setRequestProperty("Accept", "application/json");
 
                 if (conn.getResponseCode() != 200) {
+                    //whenever response code do not equal to 200, which mean server is down.  I will change to call another url of rest api server.
                     continue;
                 }
 
