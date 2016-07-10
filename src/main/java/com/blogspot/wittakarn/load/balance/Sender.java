@@ -49,6 +49,7 @@ public class Sender {
                 }
 
                 conn.disconnect();
+                break;
             }
 
         } catch (Exception ex) {
